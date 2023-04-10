@@ -34,7 +34,7 @@ function transform(arr) {
        transform[i] = arr[i-1]
      }
    }
-   return transform.filter(x => x !== '--discard-next' && x !== '--discard-prev' && x !== '--double-next' && x !== '--double-prev');
+   return transform.filter(arr => arr !== '--discard-prev' && arr !== '--double-next' && arr !== '--double-prev' && arr !== '--discard-next');
  }
 
 
